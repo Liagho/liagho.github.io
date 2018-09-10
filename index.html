@@ -1,159 +1,82 @@
 <!doctype html>
 
 <head>
-
     <meta charset="utf-8">
-
     <title>为啥没有自己的域名？穷啊！！</title>
-
     <link rel="stylesheet" href="css/test1.css" type="text/css">
-
     <style type="text/css">
-
         table tr td,th
-
         {
-
             border:1px solid #000;
-
         }
-
     </style>
-
 </head>
-
 <body>
-
-
-
 <h1 align="center" ><a href="#">Aneeu's Personal Website</a></h1>
-
         <ul>                                                           <!--有序列表是OL-->
-
             <li><a href="https://aneeu.github.io/" title="主页">Home Page</a></li>  <!--注意链接格式-->
-
             <li><a href="https://www.cnblogs.com/" title="博客">Blog</a></li>
-
             <li><a href="share.html"title="个人整理的小经验">Resource Sharing</a></li>
-
             <div class="dropdown" style="padding: 0 16px">                                     <!--设置导航下拉  DIV class在CSS用.，ID用 # -->
-
                 <a href="" class="dropbtn" title="请通过以下方式联系我">Contact Me</a>              <!--要下拉的文字-->
-
                 <div class="dropdown-content">                         <!--下拉后显示的内容-->
-
                     <a href="tel:10086" title="千万别点">tel</a>                                 <!--下拉内容链接-->
-
                     <a href="mailto:t147vip@gmail.com">email</a>        <!--这里面有个关于设备默认邮件程序的问题-->
-
                     <a href=""> 新浪a微博</a>
-
                 </div>
-
             </div>
-
         </ul>
-
             <p class="p1">
-
                 <b>加粗</b><i>斜体</i>
-
                 <q>引用</q><!--P内文本引用--><br>
-
                 <blockquote>长文本的引用，不需要自己加引号</blockquote>
-
             <hr />                                                    <!--段落间 横线隔断，建议标签后面加个斜线 / -->
-
                 这是三3个空格&nbsp;&nbsp;&nbsp;<!--一个就是一个显示出来的空格-->嗯，很好
-
             </p>
-
             <code>这是img src="css/images/bg6.jpg" >单行代码引用 </code>
-
             <pre> 仅仅用于保留空   格和换
-
                 行 </pre>
-
 <table  summary="摘要？不显示？">
-
     <caption>THIS IS NAME OF THE TABLE</caption>
-
     <tr>
-
         <th>行.1</th>
-
         <th>列.2</th>
-
     </tr>
-
     <tr>
-
         <td>表格</td>
-
         <td><a href="https://cn.bing.com/" target="_blank">必应</a></td>
-
     </tr>
-
 </table>
 
 
 
                 <!--漂浮图片 借鉴，还不太懂原理-->
-
                 <div id="float_AD" style="position:absolute;z-index:1000;" onmouseover="window.clearInterval(timer)" onmouseout="timer=window.setInterval('changePos()',delay);">
-
                     <a href="" title="感谢扫码赞助！！"><img src="css/images/0.jpg" style="width:9rem; height: 9rem " /></a>
-
                     <span style="CURSOR:hand;color:red;font-weight:bold" onclick="clearInterval(timer);obj.style.visibility = 'hidden'">X</span>
-
                 </div>
-
                 <script type="text/javascript" language="JavaScript">
-
                     var obj=document.getElementById("float_AD");
-
                     var clientHeight=document.documentElement.clientHeight;
-
                     var clientWidth=document.documentElement.clientWidth;
-
                     var timer; var delay= 15;//移动速度
-
                     function randomNum(size){ return Math.floor(Math.random()*(size-160+1)); }
-
                     obj.style.top=randomNum(clientHeight)+"px";
-
                     obj.style.left=randomNum(clientWidth)+"px";
-
                     var y=parseInt(obj.style.top);
-
                     var x=parseInt(obj.style.left);
-
                     var flagX=false; var flagY=true;
-
                     function moveY(){ if(flagY){ y++; if(y>clientHeight-160){ flagY=false; } }else{ y--; if(y<0){ flagY=true; } } obj.style.top=y+"px"; }
-
                     function moveX(){ if(flagX){ x++; if(x>clientWidth-160){ flagX=false; } }else{ x--; if(x<0){ flagX=true; } } obj.style.left=x+"px"; }
-
                     window.onresize=function(){ clientHeight=document.documentElement.clientHeight; clientWidth=document.documentElement.clientWidth; }
-
                     function changePos(){moveY();moveX(); }
-
                     function creatTimer(){timer = window.setInterval("changePos();",delay); }
-
                     function hide() {obj.style.display = "none";
-
                         obj.onmouseout = function() {obj.style.visibility = "hidden";}}
-
                     var url = window.location.href;if (true) {creatTimer();} else {hide();}// url == "http://www.xxxxx.cn/"
 
                 </script>
-
-
-
             <img src="css/images/bg2.jpg" alt="图片不显示时的替换文本" title="提示文本">                            <!--插入图片-->
-
             <address style="font-size: large"><!--这个是该地址标签格式的--><a href="https://www.baidu.com/" target="_blank">地址标签，可以放如邮件等链接</a> </address>
-
 </body>
-
 </html>
