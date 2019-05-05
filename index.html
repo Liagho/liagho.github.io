@@ -1,5 +1,4 @@
 <!doctype html>
-
 <head>
     <meta charset="utf-8">
     <title>welcome</title>
@@ -12,7 +11,7 @@
     </style>
 </head>
 <body>
-<h1 align="center" ><a href="#">欢迎光临</a></h1>
+<h1 align="center" ><a href="#">欢迎光临</a></h1>    <!--align 属性规定 div 元素中的内容的水平对齐方式-->
         <ul>                                                           <!--有序列表是OL-->
             <li><a href="me.html" title="不一样的焰火呢" target="_blank">了解我</a></li>  <!--注意链接格式-->
             <li><a href="store.html" title="你想一夜暴富吗" target="_blank">买点啥不</a></li>
@@ -22,62 +21,10 @@
                 <a href="" class="dropbtn" title="请通过以下方式联系我">Contact Me</a>              <!--要下拉的文字-->
                 <div class="dropdown-content">                         <!--下拉后显示的内容-->
                     <a href="tel:10086" title="千万别点">tel</a>                                 <!--下拉内容链接-->
-                    <a href="mailto:t147vip@gmail.com">email</a>        <!--这里面有个关于设备默认邮件程序的问题-->
+                    <a href="mailto:aneeusb@gmail.com">email</a>        <!--这里面有个关于设备默认邮件程序的问题-->
                     <a href=""> 新浪a微博</a>
                 </div>
             </div>
         </ul>
-            <p class="p1">
-                <b>加粗</b><i>斜体</i>
-                <q>引用</q><!--P内文本引用--><br>
-                <blockquote>长文本的引用，不需要自己加引号</blockquote>
-            <hr />                                                    <!--段落间 横线隔断，建议标签后面加个斜线 / -->
-                这是三3个空格&nbsp;&nbsp;&nbsp;<!--一个就是一个显示出来的空格-->嗯，很好
-            </p>
-            <code>这是img src="css/images/bg6.jpg" >单行代码引用 </code>
-            <pre> 仅仅用于保留空   格和换
-                行 </pre>
-<table  summary="摘要？不显示？">
-    <caption>THIS IS NAME OF THE TABLE</caption>
-    <tr>
-        <th>行.1</th>
-        <th>列.2</th>
-    </tr>
-    <tr>
-        <td>表格</td>
-        <td><a href="https://cn.bing.com/" target="_blank">必应</a></td>
-    </tr>
-</table>
-
-
-
-                <!--漂浮图片 借鉴，还不太懂原理-->
-                <div id="float_AD" style="position:absolute;z-index:1000;" onmouseover="window.clearInterval(timer)" onmouseout="timer=window.setInterval('changePos()',delay);">
-                    <a href="" title="感谢扫码赞助！！"><img src="css/images/0.jpg" style="width:9rem; height: 9rem " /></a>
-                    <span style="CURSOR:hand;color:red;font-weight:bold" onclick="clearInterval(timer);obj.style.visibility = 'hidden'">X</span>
-                </div>
-                <script type="text/javascript" language="JavaScript">
-                    var obj=document.getElementById("float_AD");
-                    var clientHeight=document.documentElement.clientHeight;
-                    var clientWidth=document.documentElement.clientWidth;
-                    var timer; var delay= 15;//移动速度
-                    function randomNum(size){ return Math.floor(Math.random()*(size-160+1)); }
-                    obj.style.top=randomNum(clientHeight)+"px";
-                    obj.style.left=randomNum(clientWidth)+"px";
-                    var y=parseInt(obj.style.top);
-                    var x=parseInt(obj.style.left);
-                    var flagX=false; var flagY=true;
-                    function moveY(){ if(flagY){ y++; if(y>clientHeight-160){ flagY=false; } }else{ y--; if(y<0){ flagY=true; } } obj.style.top=y+"px"; }
-                    function moveX(){ if(flagX){ x++; if(x>clientWidth-160){ flagX=false; } }else{ x--; if(x<0){ flagX=true; } } obj.style.left=x+"px"; }
-                    window.onresize=function(){ clientHeight=document.documentElement.clientHeight; clientWidth=document.documentElement.clientWidth; }
-                    function changePos(){moveY();moveX(); }
-                    function creatTimer(){timer = window.setInterval("changePos();",delay); }
-                    function hide() {obj.style.display = "none";
-                        obj.onmouseout = function() {obj.style.visibility = "hidden";}}
-                    var url = window.location.href;if (true) {creatTimer();} else {hide();}// url == "http://www.xxxxx.cn/"
-
-                </script>
-            <img src="css/images/fish.jpg" alt="图片不显示时的替换文本" title="提示文本">                            <!--插入图片-->
-            <address style="font-size: large"><!--这个是该地址标签格式的--><a href="https://www.baidu.com/" target="_blank">地址标签，可以放如邮件等链接</a> </address>
 </body>
 </html>
