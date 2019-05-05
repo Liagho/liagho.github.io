@@ -51,6 +51,17 @@
               <item name="liagho.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="liagho.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="liagho.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="liagho.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="liagho.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="liagho.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -85,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556454790620</updated>
       <workItem from="1556454795036" duration="1905000" />
-      <workItem from="1557062967702" duration="3015000" />
+      <workItem from="1557062967702" duration="3206000" />
     </task>
     <task id="LOCAL-00001" summary="20190428">
       <created>1556454865855</created>
@@ -129,11 +140,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557066478173</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="新页面布局">
+      <created>1557066570211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557066570211</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4920000" />
+    <option name="totallyTimeSpent" value="5111000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
