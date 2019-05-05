@@ -71,7 +71,7 @@ li a:hover,.dropdown:hover.dropbtn    /*鼠标移动到 a 的样式*/
 }
 .dropdown-content a                /*下拉内容的文字样式*/
 {
-    color: red;
+    color:greenyellow;
     padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
